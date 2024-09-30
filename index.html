@@ -5,13 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AlaShop</title>
+    <title>AlaShop - Университетская одежда и аксессуары</title>
+    <meta name="description" content="AlaShop - магазин одежды и аксессуаров для студентов университета. Получите скидку 10% при регистрации!">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
     <link rel="stylesheet" href="style.css">
 
     <style>
         #con {
             margin-top: -40px;
+        }
+
+        
+        @media (max-width: 768px) {
+            body {
+                font-size: 14px;
+            }
         }
     </style>
 </head>
@@ -20,7 +28,7 @@
     <section id="header">
         <div class="logo">
             <a href="" id="logo"><h1>AlaShop</h1></a>
-            <img src="img/logoalatoo.jpg" width="70">
+            <img src="img/logoalatoo.jpg" width="70" alt="Логотип AlaShop">
         </div>
 
         <div>
@@ -28,10 +36,9 @@
                 <li><a class="active" href="navbar/about.html">О нас</a></li>
                 <li><a href="navbar/contacts.html">Контакты</a></li>
                 <li><a href="navbar/help.html">Помощь</a></li>
-                <li><a href="login.html"><img width="30px" src="img/login.png"></a></li>
+                <li><a href="login.html"><img width="30px" src="img/login.png" alt="Войти"></a></li>
             </ul>
         </div>
-
     </section>
 
     <div class="menu">
@@ -67,11 +74,11 @@
             <div id="slides">
                 <div id="overflow">
                     <div class="image">
-                        <article><img height="490px" src="img/add-4.jpg"></article>
-                        <article><img height="490px" src="img/add-2.jpg"></article>
-                        <article><img height="490px" src="img/add-3.jpeg"></article>
-                        <article><img height="490px" src="img/add-1.jpg"></article>
-                        <article><img height="490px" src="img/add-5.jpg"></article>
+                        <article><img height="490px" src="img/add-4.jpg" alt="Слайд 1"></article>
+                        <article><img height="490px" src="img/add-2.jpg" alt="Слайд 2"></article>
+                        <article><img height="490px" src="img/add-3.jpeg" alt="Слайд 3"></article>
+                        <article><img height="490px" src="img/add-1.jpg" alt="Слайд 4"></article>
+                        <article><img height="490px" src="img/add-5.jpg" alt="Слайд 5"></article>
                     </div>
                 </div>
             </div>
@@ -97,19 +104,19 @@
 
         <section id="feature" class="section-p1">
             <div class="fe-box">
-                <a href="navbar/about.html"><img src="img/first.jpg" id="img-categories">
+                <a href="navbar/about.html"><img src="img/first.jpg" id="img-categories" alt="Лучшие продавцы АЛА-ТОО">
                     <h3 class="category">Лучшие продавцы АЛА-ТОО</h3></a>
             </div>
             <div class="fe-box">
-                <a href="navbar/about.html"><img src="img/second.png" id="img-categories">
+                <a href="navbar/about.html"><img src="img/second.png" id="img-categories" alt="Унисекс">
                     <h3 class="category">Унисекс</h3></a>
             </div>
             <div class="fe-box">
-                <a href="navbar/about.html"><img src="img/third.png" id="img-categories">
+                <a href="navbar/about.html"><img src="img/third.png" id="img-categories" alt="Спорт">
                     <h3 class="category">Спорт</h3></a>
             </div>
             <div class="fe-box">
-                <a href="navbar/about.html"><img src="img/fourth.png" id="img-categories">
+                <a href="navbar/about.html"><img src="img/fourth.png" id="img-categories" alt="Ограниченное издание АЛА-ТОО">
                     <h3 class="category">Ограниченное издание АЛА-ТОО</h3></a>
             </div>
         </section>
@@ -120,16 +127,16 @@
 
         <section id="tp" class="section-p2">
             <div class="box">
-                <a href="navbar/about.html"><img src="img/tp-1.png" id="img-topproducts">
+                <a href="navbar/about.html"><img src="img/tp-1.png" id="img-topproducts" alt="Топ продукт 1"></a>
             </div>
             <div class="box">
-                <a href="navbar/about.html"><img src="img/tp-2.png" id="img-topproducts">
+                <a href="navbar/about.html"><img src="img/tp-2.png" id="img-topproducts" alt="Топ продукт 2"></a>
             </div>
             <div class="box">
-                <a href="navbar/about.html"><img src="img/tp-3.png" id="img-topproducts">
+                <a href="navbar/about.html"><img src="img/tp-3.png" id="img-topproducts" alt="Топ продукт 3"></a>
             </div>
             <div class="box">
-                <a href="navbar/about.html"><img src="img/tp-4.png" id="img-topproducts">
+                <a href="navbar/about.html"><img src="img/tp-4.png" id="img-topproducts" alt="Топ продукт 4"></a>
             </div>
         </section>
     </div>
@@ -143,9 +150,9 @@
         <div class="col">
             <h3>Свяжитесь с нами:</h3>
             <div id="phone">
-                <div class="p1"><img class="call" width="20px" aria-modal="" src="img/call.png"><a href="tel:+ 0 (555) 003 335">
+                <div class="p1"><img class="call" width="20px" src="img/call.png" alt="Телефон"><a href="tel:+0(555)003335">
                         <h4>+ 0 (555) 003 335</h4></a></div>
-                <div class="p2"><img class="call" width="20px" aria-modal="" src="img/mail.png"><a href="mailto:AlaShop@mail.ru">
+                <div class="p2"><img class="call" width="20px" src="img/mail.png" alt="Email"><a href="mailto:AlaShop@mail.ru">
                         <h4>AlaShop@mail.ru</h4></a></div>
             </div>
         </div>
@@ -153,10 +160,10 @@
         <div class="col">
             <h3>Медиа ссылки:</h3>
             <div id="media">
-                <a href="https://www.instagram.com/jibeksab/?igshid=YmMyMTA2M2Y%3D"><img width="25px" src="img/instagram.png"></a>
-                <a href="https://youtube.com/@pervyy_shag"><img width="25px" src="img/youtube.png"></a>
-                <a href="https://wa.me/996706003335"><img width="25px" src="img/whatsapp.png"></a>
-                <a href="https://t.me/+996706003335"><img width="25px" src="img/telegram.png"></a>
+                <a href="https://www.instagram.com/jibeksab/?igshid=YmMyMTA2M2Y%3D"><img width="25px" src="img/instagram.png" alt="Instagram"></a>
+                <a href="https://youtube.com/@pervyy_shag"><img width="25px" src="img/youtube.png" alt="YouTube"></a>
+                <a href="https://wa.me/996706003335"><img width="25px" src="img/whatsapp.png" alt="WhatsApp"></a>
+                <a href="https://t.me/+996706003335"><img width="25px" src="img/telegram.png" alt="Telegram"></a>
             </div>
         </div>
 
