@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ссылка на пользовательский файл css -->
+    <link rel="stylesheet" href="pay.css">
+
+</head>
+<body>
+    <section id="header">
+        <div class="logo">
+            <a href="" id="logo" ><h1>AlaShop</h1></a>
+            <img src="img/back.jpg" width="50" alt="Изображение кнопки" id="" onclick="goBack()"> 
+            
+            <script>
+                function goBack() {
+                window.history.back();
+                }
+            </script>
+        </div>
+        
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="navbar/about.html">О Нас</a></li>
+                <li><a href="navbar/contacts.html">Контакты</a></li>
+                <li><a href="navbar/help.html">Помощь</a></li>
+                <li><a href="login/login.html"><img  width="30px" src="img/login.png"></a></li>
+                <li><a href="navbar/cart.html"><img width="30px" src="img/cart.png"></a></li>
+            </ul>
+        </div>
+        
+    </section>
+<div class="container">
+
+    <form action="">
+
+        <div class="row">
+
+            <div class="col">
+
+                <h3 class="title">Платежный адрес</h3>
+
+                <div class="inputBox">
+                    <span>Полное имя :</span>
+                    <input type="text" placeholder="Иван Иванов">
+                </div>
+                <div class="inputBox">
+                    <span>Email :</span>
+                    <input type="email" placeholder="example@example.com">
+                </div>
+                <div class="inputBox">
+                    <span>Адрес :</span>
+                    <input type="text" placeholder="Квартира - Улица - Район">
+                </div>
+                <div class="inputBox">
+                    <span>Город :</span>
+                    <input type="text" placeholder="Москва">
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>Штат/Регион :</span>
+                        <input type="text" placeholder="Россия">
+                    </div>
+                    <div class="inputBox">
+                        <span>Почтовый индекс :</span>
+                        <input type="text" placeholder="123456">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col">
+
+                <h3 class="title">Оплата</h3>
+
+                <div class="inputBox">
+                    <span>Принимаются карты :</span>
+                    <img src="card_img.png" alt="">
+                </div>
+                <div class="inputBox">
+                    <span>Имя на карте :</span>
+                    <input type="text" placeholder="Иван Иванов">
+                </div>
+                <div class="inputBox">
+                    <span>Номер кредитной карты :</span>
+                    <input type="number" placeholder="1111-2222-3333-4444">
+                </div>
+                <div class="inputBox">
+                    <span>Месяц истечения :</span>
+                    <input type="text" placeholder="Январь">
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>Год истечения :</span>
+                        <input type="number" placeholder="2022">
+                    </div>
+                    <div class="inputBox">
+                        <span>CVV :</span>
+                        <input type="text" placeholder="1234">
+                    </div>
+                </div>
+
+            </div>
+    
+        </div>
+        
+        <input type="submit" value="Перейти к оформлению заказа" class="submit-btn">
+
+    </form>
+
+</div>    
+    
+</body>
+</html>

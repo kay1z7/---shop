@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlaShop</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link rel="stylesheet" href="style.3.css">
+</head>
+<body>
+    <section id="header">
+        <div class="logo">
+            <a href="" id="logo" ><h1>AlaShop</h1></a>
+            <img src="img/back.jpg" width="50" alt="Кнопка Назад" id="" onclick="goBack()"> 
+            
+            <script>
+                function goBack() {
+                window.history.back();
+                }
+            </script>
+        </div>
+        
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="navbar/about.html">О нас</a></li>
+                <li><a href="navbar/contacts.html">Контакты</a></li>
+                <li><a href="navbar/help.html">Помощь</a></li>
+                <li><a href="login/login.html"><img  width="30px" src="img/login.png"></a></li>
+                <li><a href="navbar/cart.html"><img width="30px" src="img/cart.png"></a></li>
+            </ul>
+        </div>
+        
+    </section>
+
+    <div class="form-container">
+        <form action="" method="post">
+            <h3>Зарегистрируйтесь сейчас</h3>
+            <input type="text" name="name" required placeholder="Введите ваше имя">
+            <input type="email" name="email" required placeholder="Введите ваш email">
+            <input type="password" name="password" required placeholder="Введите ваш пароль">
+            <input type="password" name="cpassword" required placeholder="Подтвердите ваш пароль">
+            
+            <input type="submit" name="submit" value="Зарегистрироваться" class="form-btn">
+            <p>Уже есть аккаунт? <a href="login_form.html">Войдите сейчас</a></p>
+        </form>
+    </div>
+</body>
+</html>
