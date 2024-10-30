@@ -226,7 +226,7 @@ p {
 }
 
 .wrapper .img{
-    margin: -10px;
+    margin: 100px;
     width: 30%;
     margin-right:120px ;
 }
@@ -248,7 +248,7 @@ p {
 }
 
 .info p{
-    font-size: 22px;
+    font-size: 17px;
 }
 
 .size{
@@ -288,9 +288,28 @@ p {
     margin-right: 20px;
 }
 
-.info-d{
-    border: 2px solid black;
-    padding: 10px;
+.info-d {
+    max-height: 0;
+    overflow: hidden;
+    
+    opacity: 0;
+    padding: 0 10px;
+    margin-top: 10px;
+}
+
+.info-d.show {
+    max-height: 1000px; /* Достаточно высокое значение для текста */
+    opacity: 1;
+}
+
+.dp {
+    cursor: pointer;
+    color: #000000;
+    transition: color 0.3s ease;
+}
+
+.dp:hover {
+    color: #5a0101;
 }
 
 .img-h {
