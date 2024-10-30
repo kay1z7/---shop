@@ -4,95 +4,106 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       
-    <title>AlaShop</title>
+
+    <!-- Title Tag with Primary Keyword -->
+    <title>Свитер Ала-Тоо – Купить стильную одежду онлайн | AlaShop</title>
+    
+    <!-- Meta Description with Primary Keyword -->
+    <meta name="description" content="Купите стильный свитер Ала-Тоо с капюшоном онлайн в магазине AlaShop. Бесплатная доставка и скидки для новых клиентов!">
+    
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
     <link rel="stylesheet" href="style.2.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,Grad@20..48,100..700,0..1,-50..200"/>
+
+    
+
 </head>
 <body>
+    <!-- Header section with Internal Links -->
     <section id="header">
         <div class="logo">
-            <a href="" id="logo" ><h1>AlaShop</h1></a>
-            <img src="img/back.jpg" width="50" alt="Кнопка Назад" id="" onclick="goBack()"> 
-            
-            <script>
-                function goBack() {
-                window.history.back();
-                }
-            </script>
+            <a href="/" id="logo"><h1>AlaShop</h1></a>
+            <img src="img/back.jpg" width="50" alt="Кнопка Назад" id="back-btn" onclick="goBack()"> 
         </div>
-        
-        
+
+        <!-- Navigation bar -->
         <div>
             <ul id="navbar">
-                <li><a class="active" href="navbar/about.html">О нас</a></li>
-                <li><a href="navbar/contacts.html">Контакты</a></li>
-                <li><a href="navbar/help.html">Помощь</a></li>
-                <li><a href="register_form.html"><img  width="30px" src="img/login.png"></a></li>
-                
+                <li><a class="active" href="/about">О нас</a></li>
+                <li><a href="/contacts">Контакты</a></li>
+                <li><a href="/help">Помощь</a></li>
+                <li><a href="/register"><img width="30px" src="img/login.png" alt="Логин"></a></li>
             </ul>
         </div>
-        
     </section>
 
-
+    <!-- Discount section -->
     <div id="discount">
-     <a href="login.html"><h2>ЗАРЕГИСТРИРУЙТЕСЬ И ПОЛУЧИТЕ СКИДКУ 10%</h2></a>
+        <a href="/register"><h2>Зарегистрируйтесь и получите скидку 10% на свитер Ала-Тоо!</h2></a>
     </div>
-    
-    
 
+    <!-- Product wrapper -->
     <div class="wrapper">
+        <!-- Product image slider -->
         <div class="img">
             <div class="all">
                 <input checked type="radio" name="respond" id="desktop">
-                    <article id="slider">
-                            <input checked type="radio" name="slider" id="switch1">
-                            <input type="radio" name="slider" id="switch2">
-                            <input type="radio" name="slider" id="switch3">
+                <article id="slider">
+                    <input checked type="radio" name="slider" id="switch1">
+                    <input type="radio" name="slider" id="switch2">
+                    <input type="radio" name="slider" id="switch3">
         
-                        <div id="slides">
-                            <div id="overflow">
-                                <div class="image">
-                                    <article><img src="img/first.jpg" width="50"></article>
-                                    <article><img src="img/slider1.jpg"></article>
-                                    <article><img src="img/slider2.jpg"></article>
-                                </div>
+                    <div id="slides">
+                        <div id="overflow">
+                            <div class="image">
+                                <article><img src="img/first.jpg" width="50" alt="Свитер первый вид"></article>
+                                <article><img src="img/slider1.jpg" alt="Свитер второй вид"></article>
+                                <article><img src="img/slider2.jpg" alt="Свитер третий вид"></article>
                             </div>
                         </div>
-        
-                        <div id="controls">
-                            <label for="switch1"></label>
-                            <label for="switch2"></label>
-                            <label for="switch3"></label>
-                        </div>
-        
-                        <div id="active">
-                            <label for="switch1"></label>
-                            <label for="switch2"></label>
-                            <label for="switch3"></label>
-                        </div>
-                    </article>
+                    </div>
+
+                    <div id="controls">
+                        <label for="switch1"></label>
+                        <label for="switch2"></label>
+                        <label for="switch3"></label>
+                    </div>
+
+                    <div id="active">
+                        <label for="switch1"></label>
+                        <label for="switch2"></label>
+                        <label for="switch3"></label>
+                    </div>
+                </article>
             </div>
-            
         </div>
 
+        <!-- Product info section -->
         <div class="info">
-            <h1>Базовое худи</h1>
-            <h3 class="dp">Описание:</h3>
-            <div class="info-d" >
-                <p>Цвет: Тёмно-серый<br>
-                Стиль: Повседневный<br>
-                Воротник: С капюшоном<br>
-                Длина рукава: Длинный рукав<br>
-                Тип рукава: Обычный рукав<br>
-                Длина: Обычная</p>
+            <h1>Свитер Ала-Тоо – стиль и комфорт</h1>
+
+            <!-- При нажатии текст изменит свой стиль и покажет описание -->
+            <h3 class="dp" onclick="toggleDescription()">Описание</h3>
+            <div class="info-d" id="description" style="width: 500px;">
+                <p style="width: 800px;">
+                    Универсальный худи черного цвета — отличный выбор для</br>
+                    тех, кто ценит комфорт и стиль в повседневной жизни.</br>
+                    Благодаря мягкому и приятному материалу, эта модель </br>
+                    дарит ощущение уюта и позволяет чувствовать себя </br>
+                    свободно в любой ситуации. Худи оснащён удобным</br>
+                    капюшоном, который защитит от ветра.Длинные рукава</br>
+                    обеспечивают комфортное облегание и свободу движений,</br> 
+                    а стандартная длина подходит для любого типа фигуры, </br>
+                    легко комбинируется с разными стилями одежды.</br>
+                </p>
             </div>
             
-            <h3 class="dp">Цена: 2500</h3>
-            
+        
+
+            <h3 >Цена: 2500 сом</h3>
+
+            <!-- Product size selection -->
             <div class="size">
                 <div class="size-block"><p class="s">Размер:</p></div>
                 <div class="psize">XS</div>
@@ -100,42 +111,67 @@
                 <div class="psize">M</div>
                 <div class="psize">L</div>
             </div>
+
+            <!-- Order button -->
             <div class="btn-box">
-                    <a href="pay.html"><button class="cart-btn">Заказать сейчас</button></a>
+                <a href="/pay"><button class="cart-btn">Заказать сейчас</button></a>
             </div>
         </div>
     </div>
 
+    <!-- Footer section -->
     <footer class="section-p1">
         <div class="col1">
             <h1>AlaShop</h1>
-            <h5>университетская компания по производству одежды на заказ</h5>
+            <h5>Университетская компания по производству одежды на заказ</h5>
         </div>
 
+        <!-- Contact info -->
         <div class="col">
             <h3>Свяжитесь с нами:</h3>
             <div id="phone">
-                <div class="p1"><img class="call" width="20px" aria-modal="" src="img/call.png"><a href="tel:+ 0 (555) 003 335"><h4>+ 0 (555) 003 335</h4></a></div>
-                <div class="p2"><img class="call" width="20px" aria-modal="" src="img/mail.png"><a href="malito:AlaShop@mail.ru"><h4>AlaShop@mail.ru</h4></a></div>
+                <div class="p1">
+                    <img class="call" width="20px" src="img/call.png" alt="Телефон">
+                    <a href="tel:+7555003335"><h4>+7 (555) 003 335</h4></a>
+                </div>
+                <div class="p2">
+                    <img class="call" width="20px" src="img/mail.png" alt="Почта">
+                    <a href="mailto:AlaShop@mail.ru"><h4>AlaShop@mail.ru</h4></a>
+                </div>
             </div>
         </div>
 
+        <!-- Social media links -->
         <div class="col">
             <h3>Социальные сети:</h3>
             <div id="media">
-                <a href="https://www.instagram.com/jibeksab/?igshid=YmMyMTA2M2Y%3D"><img width="25px" src="img/instagram.png"></a>
-                <a href="https://youtube.com/@pervyy_shag"><img width="25px" src="img/youtube.png"></a>
-                <a href="https://wa.me/996706003335"><img width="25px" src="img/whatsapp.png"></a>
-                <a href="https://t.me/+996706003335"><img width="25px" src="img/telegram.png"></a>
+                <a href="https://www.instagram.com/jibeksab/?igshid=YmMyMTA2M2Y%3D"><img width="25px" src="img/instagram.png" alt="Instagram"></a>
+                <a href="https://youtube.com/@pervyy_shag"><img width="25px" src="img/youtube.png" alt="YouTube"></a>
+                <a href="https://wa.me/996706003335"><img width="25px" src="img/whatsapp.png" alt="WhatsApp"></a>
+                <a href="https://t.me/+996706003335"><img width="25px" src="img/telegram.png" alt="Telegram"></a>
             </div>
         </div>
 
-        <hr align="center" width="1276px" size="1" color="black" />
+        <!-- Footer separator -->
+        <hr align="center" width="1276px" size="1" color="black">
 
+        <!-- Copyright info -->
         <div class="copyright">
-            <p>@Copyright Ala-Shop 2023</p>
+            <p>&copy; Copyright AlaShop 2023</p>
         </div>
     </footer>
 
+    <!-- JavaScript for back button and description toggle -->
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    
+        // Функция для переключения отображения описания
+        function toggleDescription() {
+            var description = document.getElementById('description');
+            description.classList.toggle('show');
+        }
+    </script>
 </body>
 </html>
