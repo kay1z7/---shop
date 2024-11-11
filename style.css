@@ -44,7 +44,20 @@ a {
     text-decoration: none;
     color: black;
 }
+.menu button {
+    font-size: 18px;
+    padding: 10px 20px;
+}
 
+#discount h2 {
+    font-size: 16px;
+    text-align: center;
+}
+
+.fe-box, .box {
+    width: 100%;
+    margin: 10px 0;
+}
 #logo {
     color: black;
     float: right;
